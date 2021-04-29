@@ -13,6 +13,7 @@
                     <p class="right" style="height:46px;">
                         <van-icon name="wap-nav" size="26" />
                         <span>导航</span>
+                        
                     </p>
                 </template>
             </van-nav-bar>
@@ -238,10 +239,10 @@
                     gfhgfh
                     gfhgf
                     gjfjfjffjgf
-                    
+
                     hgfh
-                    gfh
-                    gfhgffgh
+                    gfh工业化怒家门口，
+                    gfhgffgh啥地方规划啥地方规划大V
                     gfhgfhgf
                     h
                 </p>
