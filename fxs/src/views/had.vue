@@ -8,7 +8,7 @@
                 <template #right style>
                     <p class="left" style="height:46px;width24px; display:flex; ">
                         <van-icon name="friends-o" size="20" />
-                        <span>我的</span>
+                        <span>我的 </span>
                     </p>
                     <p class="right" style="height:46px;">
                         <van-icon name="wap-nav" size="20" />
