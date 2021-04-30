@@ -1,28 +1,11 @@
 <template>
     <div class="wrapper">
-        <div class="header">
-            <van-nav-bar title>
-                <template #left>
-                    <img style="height:36px;" src="/image/logo.png" alt />
-                </template>
-                <template #right style>
-                    <p class="left" style="height:46px;width24px; display:flex; ">
-                        <van-icon name="friends-o" size="26" />
-                        <span>我的</span>
-                    </p>
-                    <p class="right" style="height:46px;">
-                        <van-icon name="wap-nav" size="26" />
-                        <span>导航</span>
-                        
-                    </p>
-                </template>
-            </van-nav-bar>
-        </div>
+        <had />
         <div class="box">
             <div class="banner">
                 <van-swipe :autoplay="3000">
                     <van-swipe-item v-for="(image, index) in images" :key="index">
-                        <img v-lazy="image" />
+                        <img :src="image" />
                     </van-swipe-item>
                 </van-swipe>
             </div>
@@ -43,7 +26,7 @@
             <div class="banner2">
                 <van-swipe :autoplay="3000">
                     <van-swipe-item v-for="(image, index) in imag" :key="index">
-                        <img v-lazy="image" />
+                        <img :src="image" />
                     </van-swipe-item>
                 </van-swipe>
             </div>
@@ -237,7 +220,7 @@
                     fjyhgbdgfsghdgfsxhcgbsrgfjhdgbsnhdgfabsndszdbfsdxzdbdngbfshdsgh
                           21222222      gfh1233
                     gfhgfh
-                    gfhgf
+                    gfhgf1112222
                     gjfjfjffjgf
                         12345
                     hgfh
@@ -252,7 +235,11 @@
 </template>
 
 <script>
+import had from "./had"
 export default {
+    components:{
+        had,
+    },
     data() {
         return {
             images: [
@@ -303,49 +290,7 @@ export default {
 .wrapper {
     width: 100%;
     height: 100%;
-    .header {
-        width: 100%;
-        position: relative;
-        .left {
-            width: 46px;
-            position: absolute;
-            left: 0px;
-            position: relative;
-            .van-icon {
-                position: absolute;
-                top: 0;
-                left: 7px;
-                color: #999999;
-            }
-            span {
-                width: 36px;
-                position: absolute;
-                bottom: 0px;
-                font-size: 13px;
-                color: #999999;
-            }
-        }
-        .right {
-            width: 46px;
-            position: absolute;
-            left: 0px;
-            position: relative;
-            .van-icon {
-                position: absolute;
-                top: 0;
-                left: 7px;
-                color: #999999;
-            }
-            span {
-                width: 36px;
-                position: absolute;
-                bottom: 0px;
-                left: 0px;
-                font-size: 13px;
-                color: #999999;
-            }
-        }
-    }
+    
     .box {
         width: 100%;
         height: 100%;
