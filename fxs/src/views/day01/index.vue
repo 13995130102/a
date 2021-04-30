@@ -1,11 +1,15 @@
 <template>
     <div>
-
+        <had />
     </div>
 </template>
 
 <script>
+import had from '../had'
 export default {
+    components:{
+        had
+    },
     data() {
         return {
 
